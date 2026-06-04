@@ -343,3 +343,22 @@ function showToast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => elements.toast.classList.remove("show"), 3600);
 }
+
+
+const bottomSheet = document.getElementById("bottom-sheet");
+const btnToggleSheet = document.getElementById("btn-toggle-sheet");
+const sheetToggleIcon = document.getElementById("sheet-toggle-icon");
+
+btnToggleSheet.addEventListener("click", () => {
+  bottomSheet.classList.toggle("collapsed");
+
+  const isCollapsed = bottomSheet.classList.contains("collapsed");
+
+  sheetToggleIcon.textContent = isCollapsed
+    ? "keyboard_arrow_up"
+    : "keyboard_arrow_down";
+
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 300);
+});
