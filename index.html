@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
@@ -70,9 +70,9 @@
               Ruta
             </button>
 
-            <button class="btn btn-secondary" id="btn-airtag">
+            <button class="btn btn-secondary" id="btn-compass">
               <span class="material-symbols-rounded">explore</span>
-              Modo AirTag
+              Brújula
             </button>
 
             <button class="btn btn-light" id="btn-clear">
@@ -84,15 +84,15 @@
       </section>
     </section>
 
-    <section class="view airtag-view" id="airtag-view">
-      <div class="airtag-top">
+    <section class="view compass-view" id="compass-view">
+      <div class="compass-top">
         <button class="round-back" id="btn-back-map" title="Volver al mapa">
           <span class="material-symbols-rounded">arrow_back</span>
         </button>
 
         <div>
-          <p class="eyebrow">Guía de cercanía</p>
-          <h2 id="airtag-title">Modo AirTag</h2>
+          <p class="eyebrow">Guía hacia el destino</p>
+          <h2 id="compass-title">Brújula al destino</h2>
         </div>
       </div>
 
@@ -102,26 +102,26 @@
         <div class="radar-circle circle-three"></div>
 
         <div class="radar-core">
-          <span class="material-symbols-rounded" id="airtag-arrow">navigation</span>
+          <span class="material-symbols-rounded" id="compass-arrow">navigation</span>
         </div>
       </div>
 
-      <div class="airtag-info">
-        <div class="distance-number" id="airtag-distance">
+      <div class="compass-info">
+        <div class="distance-number" id="compass-distance">
           --<span>m</span>
         </div>
 
-        <div class="status-pill" id="airtag-status">
+        <div class="status-pill" id="compass-status">
           <span class="material-symbols-rounded">sync</span>
-          Esperando ubicación GPS
+          Esperando GPS y brújula
         </div>
 
-        <p class="airtag-help" id="airtag-help">
-          Camina unos pasos en un lugar abierto para que el sistema compare si te acercas o te alejas.
+        <p class="compass-help" id="compass-help">
+          Mantén el teléfono al frente. La flecha indica la dirección aproximada hacia el punto seleccionado.
         </p>
       </div>
 
-      <div class="airtag-instructions" id="airtag-instructions"></div>
+      <div class="compass-instructions" id="compass-instructions"></div>
     </section>
   </main>
 

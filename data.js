@@ -1,13 +1,71 @@
 const CAMPUS_COORDS = [10.1345, -85.4467];
 
 const CLASSROOMS = [
+  
+  {
+    id: "biblioteca-nayuribe-pb",
+    name: "Biblioteca Nayuribe (Planta Baja)",
+    building: "Edificio de la Biblioteca",
+    floor: "Planta baja",
+    lat: 10.134320,
+    lng: -85.446992,
+    reference: "Se ubica en el nivel principal del edificio de la Biblioteca Nayuribe.",
+    instructions: [
+      "Sigue la ruta marcada en el mapa hacia el edificio de la Biblioteca Nayuribe.",
+      "Ingresa por la entrada principal en la planta baja.",
+      "Busca los mostradores o áreas de atención principales del nivel."
+    ]
+  },
+  {
+    id: "auditorio-3",
+    name: "Auditorio (Tercer Piso)",
+    building: "Edificio Central / Auditorio",
+    floor: "Tercer piso",
+    lat: 10.134237,
+    lng: -85.446910,
+    reference: "Se encuentra en el tercer nivel, subiendo por las escaleras principales o el ascensor.",
+    instructions: [
+      "Dirígete al edificio donde se encuentra el Auditorio siguiendo el mapa.",
+      "Utiliza las escaleras o el ascensor para subir al tercer piso.",
+      "Al salir al pasillo del tercer nivel, sigue los rótulos que indican la entrada al Auditorio."
+    ]
+  },
+  {
+    id: "laboratorio-ingles-pb",
+    name: "Laboratorio de Inglés",
+    building: "Bloque de Laboratorios / Idiomas",
+    floor: "Planta baja",
+    lat: 10.134106,
+    lng: -85.447015,
+    reference: "Está situado en la planta baja, cerca del área de idiomas.",
+    instructions: [
+      "Sigue la ruta en el mapa hacia el edificio de laboratorios de idiomas.",
+      "Mantén el recorrido en la planta baja (primer nivel).",
+      "Busca el pasillo principal y localiza el rótulo del Laboratorio de Inglés."
+    ]
+  },
+  {
+    id: "aula-steam-pb",
+    name: "Aula STEAM",
+    building: "Pabellón de Innovación / Tecnología",
+    floor: "Planta baja",
+    lat: 10.134179,
+    lng: -85.446918,
+    reference: "Ubicada en la planta baja del módulo tecnológico.",
+    instructions: [
+      "Avanza hacia la zona del pabellón tecnológico según las indicaciones del mapa.",
+      "Entra al edificio manteniéndote en la planta baja.",
+      "Busca el espacio identificado con el logotipo o rótulo de Aula STEAM."
+    ]
+  }
+,
   {
     id: "aula-16",
     name: "Aula 16",
     building: "Zona Colegio Humanístico",
     floor: "Primer piso",
-    lat: 10.135646,
-    lng: -85.446688,
+    lat: 10.135619,
+    lng: -85.446674,
     reference: "Está detrás de las aulas del Colegio Humanístico.",
     instructions: [
       "Sigue la ruta marcada en el mapa hacia la zona del Colegio Humanístico.",
@@ -34,8 +92,8 @@ const CLASSROOMS = [
     name: "Colegio Humanístico",
     building: "Colegio Humanístico",
     floor: "Primer piso",
-    lat: 10.135435,
-    lng: -85.446716,
+    lat: 10.135471,
+    lng: -85.446707,
     reference: "Edificio principal del Colegio Humanístico.",
     instructions: [
       "Camina hacia el punto marcado del Colegio Humanístico.",
@@ -76,8 +134,8 @@ const CLASSROOMS = [
     name: "Aula 1",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134693,
-    lng: -85.446639,
+    lat: 10.134663,
+    lng: -85.446651,
     reference: "Ubicada en el segundo piso del pabellón de aulas.",
     instructions: [
       "Sigue la ruta marcada hacia el pabellón de aulas.",
@@ -90,8 +148,8 @@ const CLASSROOMS = [
     name: "Aula 2",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134705,
-    lng: -85.446716,
+    lat: 10.134684,
+    lng: -85.446755,
     reference: "Ubicada cerca del Aula 1, en el segundo piso.",
     instructions: [
       "Dirígete al pabellón de aulas siguiendo el mapa.",
@@ -104,8 +162,8 @@ const CLASSROOMS = [
     name: "Aula 3",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134658,
-    lng: -85.446802,
+    lat: 10.134643,
+    lng: -85.446826,
     reference: "Ubicada en el segundo piso del pabellón.",
     instructions: [
       "Avanza hacia el pabellón de aulas.",
@@ -118,8 +176,8 @@ const CLASSROOMS = [
     name: "Aula 4",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134587,
-    lng: -85.446824,
+    lat: 10.134546,
+    lng: -85.446852,
     reference: "Ubicada después del Aula 3, en el segundo piso.",
     instructions: [
       "Sigue la ruta hacia el pabellón de aulas.",
@@ -132,8 +190,8 @@ const CLASSROOMS = [
     name: "Aula 5",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134513,
-    lng: -85.446788,
+    lat: 10.134468,
+    lng: -85.446798,
     reference: "Ubicada en el segundo piso del pabellón de aulas.",
     instructions: [
       "Camina hacia el pabellón de aulas.",
@@ -146,8 +204,8 @@ const CLASSROOMS = [
     name: "Aula 6",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134493,
-    lng: -85.446702,
+    lat: 10.134445,
+    lng: -85.446705,
     reference: "Ubicada cerca del Aula 5 y Aula 7.",
     instructions: [
       "Dirígete hacia el pabellón de aulas.",
@@ -160,8 +218,8 @@ const CLASSROOMS = [
     name: "Aula 7",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134530,
-    lng: -85.446626,
+    lat: 10.134480,
+    lng: -85.446635,
     reference: "Ubicada en el segundo piso, cerca del Aula 8.",
     instructions: [
       "Sigue la ruta marcada hacia el pabellón.",
@@ -174,8 +232,8 @@ const CLASSROOMS = [
     name: "Aula 8",
     building: "Pabellón de Aulas",
     floor: "Segundo piso",
-    lat: 10.134602,
-    lng: -85.446604,
+    lat: 10.134590,
+    lng: -85.446609,
     reference: "Ubicada en el segundo piso del pabellón.",
     instructions: [
       "Camina hacia el pabellón de aulas.",
@@ -188,8 +246,8 @@ const CLASSROOMS = [
     name: "Aula 9",
     building: "Pabellón de Aulas",
     floor: "Tercer piso",
-    lat: 10.134341,
-    lng: -85.447093,
+    lat: 10.134322,
+    lng: -85.447126,
     reference: "Ubicada en el tercer piso del pabellón.",
     instructions: [
       "Sigue la ruta marcada hacia el pabellón correspondiente.",
@@ -202,8 +260,8 @@ const CLASSROOMS = [
     name: "Aula 10",
     building: "Pabellón de Aulas",
     floor: "Tercer piso",
-    lat: 10.134244,
-    lng: -85.447127,
+    lat: 10.134204,
+    lng: -85.447154,
     reference: "Ubicada cerca del Aula 9, en el tercer piso.",
     instructions: [
       "Dirígete hacia el pabellón indicado en el mapa.",
