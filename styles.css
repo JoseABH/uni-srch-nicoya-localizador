@@ -543,3 +543,16 @@ select { font: inherit; }
   opacity: 0;
   pointer-events: none;
 }
+
+.sheet-content {
+  max-height: min(64vh, 520px);
+  overflow-y: auto;
+}
+.bottom-sheet.collapsed {
+  transform: translateY(calc(100% - 72px));
+}
+
+.bottom-sheet.collapsed .sheet-content {
+  opacity: 0;
+  pointer-events: none;
+}
